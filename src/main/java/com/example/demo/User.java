@@ -6,10 +6,17 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
+
 public class User {
     private String firstName;
     private String lastName;
     private String chapter;
     private String location;
+
+    public User(String firstName, String lastName, String chapter, String location) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.chapter = chapter;
+        this.location = location;
+    }
 }

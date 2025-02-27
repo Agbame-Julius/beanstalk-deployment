@@ -4,11 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+
 import java.util.Arrays;
 
 @Controller
 public class HomeController {
-    @GetMapping
+    @GetMapping("/home")
     String home(Model model) {
         model.addAttribute("message", "Welcome to my Web!!");
         model.addAttribute("users", Arrays.asList(
