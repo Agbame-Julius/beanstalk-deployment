@@ -37,4 +37,4 @@ jobs:
         run: aws s3 cp app.zip s3://${{ secrets.S3_BUCKET_NAME }}/
 
       - name: Print S3 URL
-        run: echo "S3 URL: https://${{ secrets.S3_BUCKET_NAME }}.s3.${{ secrets.AWS_REGION }}.amazonaws.com/app.zip"
+        run: echo 'S3 URL: https://${{ secrets.S3_BUCKET_NAME }}.s3.${{ secrets.AWS_REGION }}.amazonaws.com/app.zip'
