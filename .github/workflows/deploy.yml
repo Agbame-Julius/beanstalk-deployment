@@ -24,7 +24,7 @@ jobs:
           mvn clean package
 
       - name: Zip the application
-        run: zip -r app.zip target/*.jar
+        run: zip -r app.zip /*.jar
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
