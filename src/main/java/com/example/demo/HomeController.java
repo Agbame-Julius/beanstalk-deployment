@@ -11,7 +11,7 @@ import java.util.List;
 public class HomeController {
     @GetMapping("/about")
     public String home(Model model) {
-            model.addAttribute("title", "Lionel Messi - The GOAT");
+            model.addAttribute("title", "Cristiano Ronaldo - The GOAT");
             model.addAttribute("biography", "Lionel Andrés Messi is an Argentine professional footballer "
                     + "who plays as a forward for Inter Miami and the Argentina national team. "
                     + "Widely regarded as one of the greatest footballers of all time, "
@@ -27,6 +27,7 @@ public class HomeController {
             );
 
             model.addAttribute("achievements", achievements);
+            model.addAttribute("imageUrl", "https://images.app.goo.gl/EkRjp2wD6Uo5rroi9");
 
             return "index"; // Refers to messi.html in templates folder
     }

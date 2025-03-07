@@ -74,7 +74,7 @@
 <div class="container">
     <h1 th:text="${title}"></h1>
 
-    <img class="profile-img" th:src="@{/images/messi.jpg}" alt="Lionel Messi">
+    <img class="profile-img" th:src="@{${imageUrl}}" alt="Lionel Messi">
 
     <p class="bio" th:text="${biography}"></p>
 
